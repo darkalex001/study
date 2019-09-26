@@ -11,7 +11,7 @@ http.createServer(function (req,res){
 }).listen(1337,'127.0.0.1');
 
 function doGet(req,res){
-
+    console.log(req.url);
     res.writeHead(200,{'Content-Type':'text/html'});
     res.write('<html>');
     res.write('<head>');
