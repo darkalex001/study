@@ -1,7 +1,13 @@
 var http = require('http');
 http.createServer(function (req,res){
-    console.log(req);
-    res.end();
+
+    if(req.method == "GET"){
+        doGet(req,res);
+    }else if(req.method == "POST"){
+        doPost(req,res);
+    }else{
+        res.end();
+    }
 }).listen(1337,'127.0.0.1');
 
 function doGet(req,res){
@@ -13,7 +19,7 @@ function doGet(req,res){
     res.write('</title>');
     res.write('</head>');
     res.write('<body>');
-    res.write('<form method="get">');
+    res.write('<form method="post">');
     res.write('username:<input name="username">');
     res.write('password:<input name="password" type="password"><input type="submit">');
     res.write('</form>');
@@ -23,7 +29,8 @@ function doGet(req,res){
 
 }
 function doPost(req,res){
-
+    res.write("success");
+    res.end();
 }
 console.log('Server running at http://127.0.0.1:1337');
 
