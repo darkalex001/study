@@ -32,8 +32,15 @@ function doGet(req,res){
 
 }
 function doPost(req,res){
-    res.write("success");
-    res.end();
+    var formDate='';
+    req.on('data',function(data){
+        formDate+=data;
+    });
+    req.on('end',function(){
+        var obj = qs.parse(formDate);
+	console.log(obj);
+    })
+    
 }
 console.log('Server running at http://127.0.0.1:1337');
 
