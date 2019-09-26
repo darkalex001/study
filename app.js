@@ -1,4 +1,6 @@
 var http = require('http');
+var url = require('url');
+var qs = require('querystring');
 http.createServer(function (req,res){
 
     if(req.method == "GET"){
@@ -11,7 +13,8 @@ http.createServer(function (req,res){
 }).listen(1337,'127.0.0.1');
 
 function doGet(req,res){
-    console.log(req.url);
+    var obj=qs.parse(url.parse(req.url).query);
+    console.log(obj);
     res.writeHead(200,{'Content-Type':'text/html'});
     res.write('<html>');
     res.write('<head>');
