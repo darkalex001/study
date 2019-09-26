@@ -1,5 +1,11 @@
 var http = require('http');
 http.createServer(function (req,res){
+    console.log(req);
+    res.end();
+}).listen(1337,'127.0.0.1');
+
+function doGet(req,res){
+
     res.writeHead(200,{'Content-Type':'text/html'});
     res.write('<html>');
     res.write('<head>');
@@ -12,8 +18,12 @@ http.createServer(function (req,res){
     res.write('password:<input name="password" type="password"><input type="submit">');
     res.write('</form>');
     res.write('</body>');
-    res.write('<title>');
-	
-}).listen(1337,'127.0.0.1');
+    res.write('</html>');
+    res.end();
+
+}
+function doPost(req,res){
+
+}
 console.log('Server running at http://127.0.0.1:1337');
 
