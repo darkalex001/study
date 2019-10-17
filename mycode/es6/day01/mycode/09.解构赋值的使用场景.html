@@ -1,0 +1,48 @@
+<script>
+    // 交换两个变量的值
+    let a = 100;
+    let b = 200;
+    /**
+    let c = a;
+    a = b;
+    b = c;
+    */
+    [a, b] = [b, a]
+
+    console.log(a, b);
+
+    // 提取JSON中的数据
+    let jsonData = {
+        id: 43,
+        status: 'ok',
+        data: [11, 12, 45]
+    }
+    let {
+        id,
+        status,
+        data
+    } = jsonData
+    console.log(id, status, data)
+
+    // 函数中的默认值
+    function getJson({
+        url,
+        type = 'get',
+        data = '',
+        async = true
+    }) {
+        console.log(url, type, data, async)
+    }
+
+    getJson({
+        url: 'http://1.php',
+        data: 'a=100'
+    });
+</script>
+
+<!-- 如果不从localhost运行以下代码，会产生跨域问题 -->
+<script type="module">
+    import{firstName,lastName,year} from './module.js';
+    console.log(firstName,lastName,year);
+</script>
+

@@ -1,0 +1,43 @@
+<ul>
+    <li></li>
+    <li></li>
+    <li></li>
+    <li></li>
+</ul>
+
+<script>
+    let arr = ['red', 'green', 'blue'];
+
+    //for of 遍历出来的是value，值
+    for (let val of arr) {
+        console.log(val)
+    }
+
+    arr.forEach(function(){
+        
+    })
+
+    // for in 遍历出来的是key，键
+    for (let i in arr) {
+        console.log(i)
+    }
+
+    // 遍历字符串
+    for (let val of 'abcdefg') {
+        console.log(val)
+    }
+
+    // nodeList遍历
+    var lis = document.querySelectorAll('ul li');
+    for (let ele of lis) {
+        console.log(ele);
+    }
+
+    /*
+    for of与其他遍历类型做个比较
+    可以遍历出的类型比for in更多，for in 只能遍历出来key
+    forEach方式：可以遍历更多的类型，可以使用break和continue等结束语句
+
+    
+    /*
+</script>

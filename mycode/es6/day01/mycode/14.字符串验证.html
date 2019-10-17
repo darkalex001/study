@@ -1,0 +1,22 @@
+<script>
+// 字符串包含验证
+let str = 'hellow world';
+// 以前判断包含的方法indexOf
+
+console.log(str.indexOf('w'))//5
+console.log(str.indexOf('我'))//-1
+console.log(str.indexOf('hellow'))//0
+
+// 而现在ES6的方式是includes，返回的不是数字，而是布尔值
+console.log(str.includes('a'))//false
+console.log(str.includes('ow'))//true
+
+// 判断是否以某字符开头
+console.log(str.startsWith('hellow'));//false
+console.log(str.startsWith('h'));//true
+
+console.log(str.endsWith('world'));//true
+console.log(str.endsWith('d'))//false
+
+
+</script>
