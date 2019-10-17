@@ -1,0 +1,22 @@
+<script>
+	//定义变量
+	let username = "小丽丽";
+
+	function fn(){
+		return "hello world";
+	}
+	//模板字符串
+	let html = `
+	<div>\`
+		<div>
+			<p>Lorem ipsum dolor sit amet.</p>
+			<a href="#">${username}</a>
+			<p>${fn()}></p>
+		</div>
+	</div>
+	`;
+
+
+	console.log(html);
+
+</script>

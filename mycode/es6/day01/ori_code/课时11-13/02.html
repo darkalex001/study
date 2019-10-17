@@ -1,0 +1,29 @@
+<script>
+	//复制数组
+	let a = [10,20,30];
+	//复制a数组 赋值给b
+	let b = a;
+
+	console.log(a);
+	console.log(b);
+
+	b[1] = "小红";
+
+	console.log(a);
+
+
+	// 复制数组(克隆)
+	let arr1 = [100,200,300,400];
+
+	let arr2 = [...arr1]; // [100,200,300,400]
+
+	console.log(arr1);
+	console.log(arr2);
+
+	arr1[2] = "小红";
+	console.log(arr1);
+	console.log(arr2);
+
+
+
+</script>

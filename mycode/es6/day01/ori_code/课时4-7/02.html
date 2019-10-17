@@ -1,0 +1,27 @@
+<script>
+	//对象的解构赋值
+	// let {bar, foo} = {bar:'lili', foo:100};
+
+	// console.log(bar, foo);
+
+
+	//完整的对象 解构赋值
+	//let {bar:bar, foo:foo} = {bar:'honghogn', foo:'yanyan'};
+	let {bar:a, foo:b} = {bar:'honghogn', foo:'yanyan'};
+
+	//console.log(bar, foo);
+	console.log(a, b);
+
+
+	//对象解构 复杂的形式
+	let obj = {
+		p: [
+			'Hello',
+			{y: 'World'}
+		]
+	};
+
+	let {p: [x, {y:y}]} = obj;
+
+	console.log(x, y);
+</script>

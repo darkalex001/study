@@ -1,0 +1,45 @@
+<script>
+	let username = "Mark tuwen";
+	let userage = 100;
+
+	//ES5
+/*	let userInfo = {
+		username: username,
+		userage: userage
+	};
+*/
+	
+	let userInfo = {
+		username,
+		userage,
+
+		fn:function(){
+			console.log('fn');
+		},
+
+		demo(){
+			console.log('demo');
+		},
+
+		getInfo(){
+			console.log('getInfo');
+		}
+	}
+
+	console.log(userInfo);
+
+
+	//结构赋值
+	//let {foo, bar} = {foo:100, bar:200};
+	let {foo:foo, bar:bar} = {foo:100, bar:200};
+
+	console.log(foo, bar);
+
+	userInfo.fn();
+	userInfo.demo();
+	userInfo.getInfo();
+
+
+
+
+</script>

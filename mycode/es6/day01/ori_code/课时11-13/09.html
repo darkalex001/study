@@ -1,0 +1,21 @@
+<script>
+	// entries() keys()  values()  遍历数组
+	//声明数组
+	let arrs = ['xiaolili','xiaohong',100,'dahong'];
+
+
+	//keys() 遍历数组中所有的 索引值
+	for (let k of arrs.keys()) {
+		console.log(k);
+	}
+
+
+	//entries()  遍历数组中的key和value
+	for (let [key, val] of arrs.entries()) {
+		console.log(key, val);
+	}
+
+
+	console.log(arrs.includes("aaaa"));
+	console.log(arrs.includes(100));
+</script>

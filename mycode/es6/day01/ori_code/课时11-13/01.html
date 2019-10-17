@@ -1,0 +1,21 @@
+<script>
+	//rest参数
+	function fn(...args){
+		console.log(args);
+	}
+
+	fn(1,23,342);
+
+
+	//定义函数
+	function demo(x, y, z) {
+		console.log(x + y + z);
+	}
+
+	demo(10, 20, 40);
+
+	let argList = [1,2,3];
+
+	demo(...argList); // demo(1,2,3)
+
+</script>

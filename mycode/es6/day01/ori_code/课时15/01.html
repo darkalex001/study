@@ -1,0 +1,25 @@
+<script>
+	let mySet = new Set([1,2,356,2]);
+
+
+	console.log(mySet);
+
+
+	let mySet2 = new Set(mySet);
+	console.log(mySet);
+
+
+
+	//实现数组去重
+	let arr = [10,23,4,23,10,23];
+
+	//let newArr = [...new Set(arr)];
+	let newArr = Array.from(new Set(arr));
+
+	console.log(newArr);
+
+
+	//set数据结构的属性
+	console.log(mySet.size);
+
+</script>

@@ -1,0 +1,30 @@
+<script>
+	let obj1 = {
+		name:"Jim",
+		age:19,
+		fn(){
+
+		}
+	};
+
+	let obj2 = {
+		name:"Bob",
+		grade:"H5",
+		demo(){
+
+		}
+	};
+
+	//进行合并
+	Object.assign(obj1, obj2);
+
+
+	console.log(obj1);
+
+
+	//合并
+	let res = Object.assign({}, obj1, obj2);
+
+	console.log(res);
+
+</script>

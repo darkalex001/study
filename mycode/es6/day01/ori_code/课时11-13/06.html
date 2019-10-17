@@ -1,0 +1,34 @@
+<meta charset="utf-8">
+<script>
+	//Array.from();
+	let arrayLike = {
+		0:"小红",
+		1:"小艳艳",
+		2:"小翠翠",
+		3:"小丽丽",
+		length:4
+	};
+
+	console.log(arrayLike);
+
+	//把arrayLike转换为 数组
+	let arrList = Array.from(arrayLike);
+
+	console.log(arrList);
+	arrList.forEach(function(val, key){
+		console.log(key, val);
+	});
+
+
+	// 实现了interator接口的数据
+	let strList = Array.from('xiaohong');
+
+	console.log(strList);
+
+	strList.forEach(function(val, key) {
+		console.log(key, val);
+	});
+
+
+	//let arr = [...'hellow'];
+</script>
