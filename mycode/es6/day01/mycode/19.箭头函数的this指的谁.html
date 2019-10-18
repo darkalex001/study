@@ -1,0 +1,17 @@
+<!-- 箭头函数中的this是函数声明时所在的对象 -->
+<script>
+    let obj = {
+        num:4,
+        fn:function(){
+            // var f = function(){
+            //     console.log(this)
+            // }
+            let f = () => {
+                console.log(this)
+            }
+            f();
+        }
+    }
+
+    obj.fn(); //var的时候是window,let的时候是{num: 4, fn: ƒ}也就是obj对象
+</script>

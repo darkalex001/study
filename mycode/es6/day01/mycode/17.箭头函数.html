@@ -1,0 +1,29 @@
+<!-- 
+    箭头函数
+    * 简化函数的声明
+    * 参数超过1个加()
+    * 函数体超过1行，加{}，自己写return
+-->
+
+<script>
+    let fn = val => val;
+    // 等同于
+    /*
+    let fn = function (val) {
+        return val;
+    }
+    */
+    console.log(fn(100))
+
+    // 实现两个数之和
+    let sum = (num1, num2) => num1 + num2;
+    console.log(sum(1, 5));
+
+    // 箭头函数 函数体多个句
+    let demo = (num) => {
+        console.log(num);
+        console.log(num + 2);
+        return 100;
+    }
+    demo (200);
+</script>

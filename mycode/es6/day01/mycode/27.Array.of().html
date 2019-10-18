@@ -1,0 +1,17 @@
+<script>
+
+let arr = Array.of(10,20,39,40);
+console.log(arr);//[10, 20, 39, 40]
+
+// 用Array.of比new Array要好用
+let arr1 = new Array('a','b','c');
+console.log(arr1);//["a", "b", "c"]
+
+let arr2 = new Array(10);
+console.log(arr2);//(10) [empty × 10]这里的10变成了数组的长度，会产生歧义，所以不推荐使用new Array的方式
+
+let arr3 = Array.of(10);
+console.log(arr3);//[10]
+
+
+</script>

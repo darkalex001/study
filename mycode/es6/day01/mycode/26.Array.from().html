@@ -1,0 +1,42 @@
+<script>
+let arrayLike = {
+    0:'xiaohong',
+    1:'xiaoyanyan',
+    2:'xiaocuicui',
+    3:'xiaolili',
+    length:4
+}
+console.log(arrayLike);
+
+// 遍历对象不能用forEach，forEach只能用于纯数组
+/*
+arrayLike.forEach(function(val,key){
+    console.log(key,val)//报错，因为对象中是不存在forEach方法的
+})*/
+
+// 把arrayLike变成纯数组
+let arrList = Array.from(arrayLike);
+console.log(arrList);// ["xiaohong", "xiaoyanyan", "xiaocuicui", "xiaolili"]
+
+// 为了验证已经变成数组了，可以进行forEach测试
+arrList.forEach(function(val,key){
+    console.log(key,val);
+    /*
+    0 "xiaohong"
+    26.Array.from().html:23 1 "xiaoyanyan"
+    26.Array.from().html:23 2 "xiaocuicui"
+    26.Array.from().html:23 3 "xiaolili"
+    */
+})
+
+// 实现了interator接口的数据
+
+let strList = Array.from('xiaohong');
+console.log(strList);//["x", "i", "a", "o", "h", "o", "n", "g"]
+strList.forEach(function(val,key){
+    console.log(key,val);
+})
+
+let arr = [...'hellow'];
+console.log(arr);
+</script>
