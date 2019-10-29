@@ -1,0 +1,35 @@
+{
+    "title": "AIO's Gitbook",
+    "author": "darkalex",
+    "description": "niubility",
+    "language": "zh-hans",
+    "gitbook": "3.2.3",
+    "styles": {
+        "website": "./styles/website.css"
+    },
+    "structure": {
+        "readme": "README.md"
+    },
+    "plugins": [
+        "auto-scroll-table",
+        "back-to-top-button",
+        "chapter-fold",
+        "expandable-chapters-small",
+        "code",
+        "-lunr",
+        "-search",
+        "search-pro",
+        "splitter",
+        "page-toc-button"
+
+    ],
+    "pluginsConfig": {
+        "code": {
+          "copyButtons": true
+        }
+    },
+    "introduction": {
+        "path": "./README.md",
+        "title": "你的介绍文件的标题"
+    }
+}

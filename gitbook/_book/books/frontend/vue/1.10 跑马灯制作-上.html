@@ -1,0 +1,920 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>1.10 跑马灯制作-上 · AIO's Gitbook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="darkalex">
+        
+        
+    
+    <link rel="stylesheet" href="../../../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-auto-scroll-table/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-code/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-search-pro/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-page-toc-button/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../../../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+        <link rel="stylesheet" href="../../../styles/website.css">
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../../../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../../../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="1.11 跑马灯制作-下.html" />
+    
+    
+    <link rel="prev" href="1.9 使用v-on指令定义Vue中的事件.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../../../">
+            
+                <a href="../../../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../../../node/README.md">
+            
+                <span>
+            
+                    
+                    FrontEnd
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../node/1.0 第一天学习概要.html">
+            
+                <a href="../node/1.0 第一天学习概要.html">
+            
+                    
+                    Node.js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="../node/1.1 为什么学习Node.html">
+            
+                <a href="../node/1.1 为什么学习Node.html">
+            
+                    
+                    1.1 为什么学习Node.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="../node/1.2 Node.js是什么.html">
+            
+                <a href="../node/1.2 Node.js是什么.html">
+            
+                    
+                    1.2 Node.js是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="../node/1.3 Node.js介绍.html">
+            
+                <a href="../node/1.3 Node.js介绍.html">
+            
+                    
+                    1.3 Node.js介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="../node/1.4 Node.js环境安装.html">
+            
+                <a href="../node/1.4 Node.js环境安装.html">
+            
+                    
+                    1.4 Node.js环境安装
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="../node/1.5 使用Node.js执行JS脚本文件.html">
+            
+                <a href="../node/1.5 使用Node.js执行JS脚本文件.html">
+            
+                    
+                    1.5 使用Node.js执行JS脚本文件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="../node/1.6 HelloWorld.html">
+            
+                <a href="../node/1.6 HelloWorld.html">
+            
+                    
+                    1.6 HelloWorld
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="../node/1.7 写文件和简单的处理.html">
+            
+                <a href="../node/1.7 写文件和简单的处理.html">
+            
+                    
+                    1.7 写文件和简单的处理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="../node/1.8 简单的HTTP服务.html">
+            
+                <a href="../node/1.8 简单的HTTP服务.html">
+            
+                    
+                    1.8 简单的HTTP服务
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="../node/1.9 发送响应.html">
+            
+                <a href="../node/1.9 发送响应.html">
+            
+                    
+                    1.9 发送响应
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" data-path="../node/1.10 根据不同请求路径返回不同数据.html">
+            
+                <a href="../node/1.10 根据不同请求路径返回不同数据.html">
+            
+                    
+                    1.10 根据不同请求路径返回不同数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="../node/1.11 Node.js中的核心模块.html">
+            
+                <a href="../node/1.11 Node.js中的核心模块.html">
+            
+                    
+                    1.11 Node.js中的核心模块
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="../node/1.12 ip地址和端口号的概念.html">
+            
+                <a href="../node/1.12 ip地址和端口号的概念.html">
+            
+                    
+                    1.12 ip地址和端口号的概念
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../node/1.0 第一天学习概要.html">
+            
+                <a href="../node/1.0 第一天学习概要.html">
+            
+                    
+                    Vue.js
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="xdl/vue增删改查基础.html">
+            
+                <a href="xdl/vue增删改查基础.html">
+            
+                    
+                    1.0 Vue.js接口开发及增删改查
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="1.1 Vue.js课程介绍.md">
+            
+                <span>
+            
+                    
+                    1.1 Vue.js课程介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="1.2 什么是Vue.js.md">
+            
+                <span>
+            
+                    
+                    1.2 什么是Vue.js
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="1.3 为什么要学习前端的流行框架.md">
+            
+                <span>
+            
+                    
+                    1.3 为什么要学习前端的流行框架
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="1.4 框架和库的区别.md">
+            
+                <span>
+            
+                    
+                    1.4 框架和库的区别
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.6" data-path="1.5 MVC和MVVM的关系图解.html">
+            
+                <a href="1.5 MVC和MVVM的关系图解.html">
+            
+                    
+                    1.5 MVC和MVVM的关系图解
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.7" data-path="1.6 Vue基本代码和MVVM之间对应的关系.html">
+            
+                <a href="1.6 Vue基本代码和MVVM之间对应的关系.html">
+            
+                    
+                    1.6 Vue基本代码和MVVM之间对应的关系
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.8" data-path="1.7 详解v-clock_v-text_v-html的基本使用.html">
+            
+                <a href="1.7 详解v-clock_v-text_v-html的基本使用.html">
+            
+                    
+                    1.7 详解v-clock_v-text_v-html的基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.9" data-path="1.8 v-bind指令的学习.html">
+            
+                <a href="1.8 v-bind指令的学习.html">
+            
+                    
+                    1.8 v-bind指令的学习
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.10" data-path="1.9 使用v-on指令定义Vue中的事件.html">
+            
+                <a href="1.9 使用v-on指令定义Vue中的事件.html">
+            
+                    
+                    1.9 使用v-on指令定义Vue中的事件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2.11" data-path="1.10 跑马灯制作-上.html">
+            
+                <a href="1.10 跑马灯制作-上.html">
+            
+                    
+                    1.10 跑马灯制作-上
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.12" data-path="1.11 跑马灯制作-下.html">
+            
+                <a href="1.11 跑马灯制作-下.html">
+            
+                    
+                    1.11 跑马灯制作-下
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.13" data-path="1.12 事件修饰符的介绍.html">
+            
+                <a href="1.12 事件修饰符的介绍.html">
+            
+                    
+                    1.12 事件修饰符的介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.14" data-path="1.13 讲解v-model实现表单元素的数据双向绑定.html">
+            
+                <a href="1.13 讲解v-model实现表单元素的数据双向绑定.html">
+            
+                    
+                    1.13 讲解v-model实现表单元素的数据双向绑定
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.15" data-path="1.14 使用v-model实现计算器的案例.md">
+            
+                <span>
+            
+                    
+                    1.14 使用v-model实现计算器的案例
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.16" data-path="1.15 Vue中通过属性绑定为元素设置class类样式.md">
+            
+                <span>
+            
+                    
+                    1.15 Vue中通过属性绑定为元素设置class类样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.17" data-path="1.16 Vue中通过属性绑定为元素绑定style行内样式.md">
+            
+                <span>
+            
+                    
+                    1.16 Vue中通过属性绑定为元素绑定style行内样式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.18" data-path="1.17 v-for中指令的四种使用方式.md">
+            
+                <span>
+            
+                    
+                    1.17 v-for中指令的四种使用方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.19" data-path="1.18 v-for中key的使用注意事项.md">
+            
+                <span>
+            
+                    
+                    1.18 v-for中key的使用注意事项
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.20" data-path="1.19 v-if和v-show的使用和特点.md">
+            
+                <span>
+            
+                    
+                    1.19 v-if和v-show的使用和特点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.21" data-path="2.1 品牌案例-完成品牌列表的添加功能.md">
+            
+                <span>
+            
+                    
+                    2.1 品牌案例-完成品牌列表的添加功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.22" data-path="2.2 品牌案例-根据ID完成品牌的删除.md">
+            
+                <span>
+            
+                    
+                    2.2 品牌案例-根据ID完成品牌的删除
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.23" data-path="2.3 Vue-devtools的两种安装方式.md">
+            
+                <span>
+            
+                    
+                    2.3 Vue-devtools的两种安装方式
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.24" data-path="2.4 品牌案例-根据关键字实现数组的过滤.md">
+            
+                <span>
+            
+                    
+                    2.4 品牌案例-根据关键字实现数组的过滤
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.25" data-path="2.5 过滤器-Vue中全局过滤器的基本使用.md">
+            
+                <span>
+            
+                    
+                    2.5 过滤器-Vue中全局过滤器的基本使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.26" data-path="2.6 过滤器-定义格式化时间的全局过滤器.md">
+            
+                <span>
+            
+                    
+                    2.6 过滤器-定义格式化时间的全局过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.27" data-path="2.7 过滤器-定义私有过滤器.md">
+            
+                <span>
+            
+                    
+                    2.7 过滤器-定义私有过滤器
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.28" data-path="2.8 字符串的padStart方法使用.md">
+            
+                <span>
+            
+                    
+                    2.8 字符串的padStart方法使用
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.29" data-path="2.9 自定义按键修饰符.md">
+            
+                <span>
+            
+                    
+                    2.9 自定义按键修饰符
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.30" data-path="2.10 指令-自定义全局指令让文本框获取焦点.md">
+            
+                <span>
+            
+                    
+                    2.10 指令-自定义全局指令让文本框获取焦点
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.31" data-path="2.11 指令-使用钩子函数的第二个binding参数拿到传递的值.md">
+            
+                <span>
+            
+                    
+                    2.11 指令-使用钩子函数的第二个binding参数拿到传递的值
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../../.." >1.10 跑马灯制作-上</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <ul>
+<li><p>&#x5206;&#x6790;&#xFF1A;</p>
+<ol>
+<li>&#x7ED9; &#x3010;&#x6D6A;&#x8D77;&#x6765;&#x3011; &#x6309;&#x94AE;&#xFF0C;&#x7ED1;&#x5B9A;&#x4E00;&#x4E2A;&#x70B9;&#x51FB;&#x4E8B;&#x4EF6;   <code>v-on</code>  <code>@</code></li>
+<li>&#x5728;&#x6309;&#x94AE;&#x7684;&#x4E8B;&#x4EF6;&#x5904;&#x7406;&#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x5199;&#x76F8;&#x5173;&#x7684;&#x4E1A;&#x52A1;&#x903B;&#x8F91;&#x4EE3;&#x7801;&#xFF1A;&#x62FF;&#x5230; <code>msg</code> &#x5B57;&#x7B26;&#x4E32;&#xFF0C;&#x7136;&#x540E; &#x8C03;&#x7528; &#x5B57;&#x7B26;&#x4E32;&#x7684; <code>substring</code> &#x6765;&#x8FDB;&#x884C;&#x5B57;&#x7B26;&#x4E32;&#x7684;&#x622A;&#x53D6;&#x64CD;&#x4F5C;&#xFF0C;&#x628A; &#x7B2C;&#x4E00;&#x4E2A;&#x5B57;&#x7B26;&#x622A;&#x53D6;&#x51FA;&#x6765;&#xFF0C;&#x653E;&#x5230;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4F4D;&#x7F6E;&#x5373;&#x53EF;</li>
+<li>&#x4E3A;&#x4E86;&#x5B9E;&#x73B0;&#x70B9;&#x51FB;&#x4E0B;&#x6309;&#x94AE;&#xFF0C;&#x81EA;&#x52A8;&#x622A;&#x53D6;&#x7684;&#x529F;&#x80FD;&#xFF0C;&#x9700;&#x8981;&#x628A; 2 &#x6B65;&#x9AA4;&#x4E2D;&#x7684;&#x4EE3;&#x7801;&#xFF0C;&#x653E;&#x5230;&#x4E00;&#x4E2A;&#x5B9A;&#x65F6;&#x5668;&#x4E2D;&#x53BB;</li>
+</ol>
+</li>
+</ul>
+<blockquote>
+<p>&#x5728; <code>VM&#x5B9E;&#x4F8B;</code> &#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x60F3;&#x8981;&#x83B7;&#x53D6; <code>data</code> &#x4E0A;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x6216;&#x8005; &#x60F3;&#x8981;&#x8C03;&#x7528; <code>methods</code> &#x4E2D;&#x7684; &#x65B9;&#x6CD5;&#xFF0C;&#x5FC5;&#x987B;&#x901A;&#x8FC7; <code>this.&#x6570;&#x636E;&#x5C5E;&#x6027;&#x540D;</code>  &#x6216;  <code>this.&#x65B9;&#x6CD5;&#x540D;</code> &#x6765;&#x8FDB;&#x884C;&#x8BBF;&#x95EE;&#xFF0C;&#x8FD9;&#x91CC;&#x7684;this&#xFF0C;&#x5C31;&#x8868;&#x793A; &#x6211;&#x4EEC; new &#x51FA;&#x6765;&#x7684;  VM &#x5B9E;&#x4F8B;&#x5BF9;&#x8C61;</p>
+</blockquote>
+<p>&#x622A;&#x53D6;&#x5934;&#x90E8;&#x9996;&#x5B57;&#x7B26;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> start = <span class="hljs-keyword">this</span>.msg.substring(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+</code></pre>
+<p>&#x83B7;&#x53D6;&#x5230; &#x540E;&#x9762;&#x7684;&#x6240;&#x6709;&#x5B57;&#x7B26;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">var</span> end = <span class="hljs-keyword">this</span>.msg.substring(<span class="hljs-number">1</span>)
+</code></pre>
+<p>&#x62FC;&#x63A5;&#x5B57;&#x7B26;&#x4E32;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.msg = end + start
+</code></pre>
+<blockquote>
+<p>&#x6CE8;&#x610F;&#xFF1A; VM&#x5B9E;&#x4F8B;&#xFF0C;&#x4F1A;&#x76D1;&#x542C;&#x81EA;&#x5DF1;&#x8EAB;&#x4E0A; data &#x4E2D;&#x6240;&#x6709;&#x6570;&#x636E;&#x7684;&#x6539;&#x53D8;&#xFF0C;&#x53EA;&#x8981;&#x6570;&#x636E;&#x4E00;&#x53D1;&#x751F;&#x53D8;&#x5316;&#xFF0C;&#x5C31;&#x4F1A;&#x81EA;&#x52A8;&#x628A; &#x6700;&#x65B0;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x4ECE;data &#x4E0A;&#x540C;&#x6B65;&#x5230;&#x9875;&#x9762;&#x4E2D;&#x53BB;&#xFF1B;&#x3010;&#x597D;&#x5904;&#xFF1A;&#x7A0B;&#x5E8F;&#x5458;&#x53EA;&#x9700;&#x8981;&#x5173;&#x5FC3;&#x6570;&#x636E;&#xFF0C;&#x4E0D;&#x9700;&#x8981;&#x8003;&#x8651;&#x5982;&#x4F55;&#x91CD;&#x65B0;&#x6E32;&#x67D3;DOM&#x9875;&#x9762;&#x3011;</p>
+</blockquote>
+<p>&#x7BAD;&#x5934;&#x51FD;&#x6570;&#x5185;&#x90E8;&#x7684;<code>this</code>&#x6C38;&#x8FDC;&#x548C;&#x5916;&#x90E8;&#x7684;<code>this</code>&#x4FDD;&#x6301;&#x4E00;&#x81F4;</p>
+<pre><code class="lang-javascript"><span class="hljs-keyword">this</span>.intervalId = setInterval(() =&gt; {
+    <span class="hljs-keyword">var</span> start = <span class="hljs-keyword">this</span>.msg.substring(<span class="hljs-number">0</span>, <span class="hljs-number">1</span>)
+    <span class="hljs-keyword">var</span> end = <span class="hljs-keyword">this</span>.msg.substring(<span class="hljs-number">1</span>)
+    <span class="hljs-keyword">this</span>.msg = end + start
+}, <span class="hljs-number">400</span>)
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="1.9 使用v-on指令定义Vue中的事件.html" class="navigation navigation-prev " aria-label="Previous page: 1.9 使用v-on指令定义Vue中的事件">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="1.11 跑马灯制作-下.html" class="navigation navigation-next " aria-label="Next page: 1.11 跑马灯制作-下">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"1.10 跑马灯制作-上","level":"1.2.2.11","depth":3,"next":{"title":"1.11 跑马灯制作-下","level":"1.2.2.12","depth":3,"path":"books/frontend/vue/1.11 跑马灯制作-下.md","ref":"books/frontend/vue/1.11 跑马灯制作-下.md","articles":[]},"previous":{"title":"1.9 使用v-on指令定义Vue中的事件","level":"1.2.2.10","depth":3,"path":"books/frontend/vue/1.9 使用v-on指令定义Vue中的事件.md","ref":"books/frontend/vue/1.9 使用v-on指令定义Vue中的事件.md","articles":[]},"dir":"ltr"},"config":{"plugins":["auto-scroll-table","back-to-top-button","chapter-fold","expandable-chapters-small","code","-lunr","-search","search-pro","splitter","page-toc-button","livereload"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"chapter-fold":{},"livereload":{},"splitter":{},"search-pro":{},"auto-scroll-table":{},"code":{"copyButtons":true},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"page-toc-button":{},"back-to-top-button":{},"expandable-chapters-small":{},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"darkalex","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"AIO's Gitbook","language":"zh-hans","introduction":{"path":"./README.md","title":"你的介绍文件的标题"},"gitbook":"3.2.3","description":"niubility"},"file":{"path":"books/frontend/vue/1.10 跑马灯制作-上.md","mtime":"2019-10-29T03:00:40.117Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-10-29T02:13:13.694Z"},"basePath":"../../..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../../../gitbook/gitbook.js"></script>
+    <script src="../../../gitbook/theme.js"></script>
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-auto-scroll-table/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-back-to-top-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-chapter-fold/chapter-fold.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-code/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/jquery.mark.min.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-search-pro/search.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-page-toc-button/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../../../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
